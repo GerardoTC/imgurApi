@@ -9,9 +9,13 @@
 import UIKit
 
 protocol GallerySearchInteractorProtocol {
-    
+    func setPresenter(presenter:GallerySearchPresenterProtocol)
 }
 
 class GallerySearchInteractor:GallerySearchInteractorProtocol {
-
+    var presenter: GallerySearchPresenterProtocol!
+    
+    func setPresenter(presenter:GallerySearchPresenterProtocol) {
+        self.presenter = presenter
+    }
 }

@@ -7,14 +7,21 @@
 //
 
 import UIKit
+protocol GallerySearchViewProtocol {
+    
+}
+class GallerySearchViewController: UIViewController,GallerySearchViewProtocol {
 
-class GallerySearchViewController: UIViewController {
-
+    var presenter:GallerySearchPresenterProtocol!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        initMVP(interactor: GallerySearchInteractor())
     }
 
+    func initMVP(interactor:GallerySearchInteractorProtocol) {
+        presenter = GallerySearchPresenter(view: self, interactor: interactor)
+    }
 
 }
 

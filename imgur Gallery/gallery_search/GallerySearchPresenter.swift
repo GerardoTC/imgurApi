@@ -14,4 +14,7 @@ protocol GallerySearchPresenterProtocol: class {
 
 class GallerySearchPresenter:GallerySearchPresenterProtocol {
     
+    init(view: GallerySearchViewProtocol, interactor: GallerySearchInteractorProtocol) {
+        interactor.setPresenter(presenter: self)
+    }
 }
