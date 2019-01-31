@@ -11,6 +11,9 @@
 		5ADA07A3905A947D22FB93A9 /* Pods_imgur_GalleryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A784965F001903013770EA2 /* Pods_imgur_GalleryTests.framework */; };
 		9A22776822028F0200D61D3A /* GallerySearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22776722028F0200D61D3A /* GallerySearchPresenter.swift */; };
 		9A22776A22028FF000D61D3A /* GallerySearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22776922028FF000D61D3A /* GallerySearchInteractor.swift */; };
+		9A22776F2202951A00D61D3A /* GallerySearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22776E2202951A00D61D3A /* GallerySearchAPI.swift */; };
+		9A22777222029A5000D61D3A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22777122029A5000D61D3A /* Constants.swift */; };
+		9A22777422029EC600D61D3A /* RequestBuilderGET.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22777322029EC600D61D3A /* RequestBuilderGET.swift */; };
 		9AB9E73422028132007156D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9E73322028132007156D9 /* AppDelegate.swift */; };
 		9AB9E73622028132007156D9 /* GallerySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9E73522028132007156D9 /* GallerySearchViewController.swift */; };
 		9AB9E73922028132007156D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB9E73722028132007156D9 /* Main.storyboard */; };
@@ -38,6 +41,9 @@
 		915A38B2F113586873F56D8A /* Pods_imgur_Gallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_imgur_Gallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A22776722028F0200D61D3A /* GallerySearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallerySearchPresenter.swift; sourceTree = "<group>"; };
 		9A22776922028FF000D61D3A /* GallerySearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallerySearchInteractor.swift; sourceTree = "<group>"; };
+		9A22776E2202951A00D61D3A /* GallerySearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallerySearchAPI.swift; sourceTree = "<group>"; };
+		9A22777122029A5000D61D3A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9A22777322029EC600D61D3A /* RequestBuilderGET.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilderGET.swift; sourceTree = "<group>"; };
 		9AB9E73022028132007156D9 /* imgur Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "imgur Gallery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB9E73322028132007156D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AB9E73522028132007156D9 /* GallerySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallerySearchViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +88,7 @@
 		9A22776522028E8E00D61D3A /* gallery_search */ = {
 			isa = PBXGroup;
 			children = (
+				9A22776D220294E500D61D3A /* repository */,
 				9AB9E73522028132007156D9 /* GallerySearchViewController.swift */,
 				9A22776722028F0200D61D3A /* GallerySearchPresenter.swift */,
 				9A22776922028FF000D61D3A /* GallerySearchInteractor.swift */,
@@ -97,6 +104,23 @@
 				9AB9E73C22028140007156D9 /* LaunchScreen.storyboard */,
 			);
 			path = ui;
+			sourceTree = "<group>";
+		};
+		9A22776D220294E500D61D3A /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				9A22776E2202951A00D61D3A /* GallerySearchAPI.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		9A22777022029A3300D61D3A /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				9A22777122029A5000D61D3A /* Constants.swift */,
+				9A22777322029EC600D61D3A /* RequestBuilderGET.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 		9AB9E72722028132007156D9 = {
@@ -122,6 +146,7 @@
 		9AB9E73222028132007156D9 /* imgur Gallery */ = {
 			isa = PBXGroup;
 			children = (
+				9A22777022029A3300D61D3A /* utils */,
 				9A22776622028EAC00D61D3A /* ui */,
 				9A22776522028E8E00D61D3A /* gallery_search */,
 				9AB9E73322028132007156D9 /* AppDelegate.swift */,
@@ -361,10 +386,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A22777422029EC600D61D3A /* RequestBuilderGET.swift in Sources */,
 				9AB9E73622028132007156D9 /* GallerySearchViewController.swift in Sources */,
 				9A22776A22028FF000D61D3A /* GallerySearchInteractor.swift in Sources */,
+				9A22776F2202951A00D61D3A /* GallerySearchAPI.swift in Sources */,
 				9A22776822028F0200D61D3A /* GallerySearchPresenter.swift in Sources */,
 				9AB9E73422028132007156D9 /* AppDelegate.swift in Sources */,
+				9A22777222029A5000D61D3A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
