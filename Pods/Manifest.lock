@@ -1,3 +1,15 @@
-PODFILE CHECKSUM: 68bb5864f0fa4da014f0b22ce9b19cb26fbf7b8b
+PODS:
+  - ImageLoader (0.14.0)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - ImageLoader
+  - SVProgressHUD
+
+SPEC CHECKSUMS:
+  ImageLoader: 56f57e35d6ed26a74183dc2e472133b4b22eb7b9
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 7081925bfe39babbc6242910f04d0d04b5abad36
 
 COCOAPODS: 1.4.0

@@ -6,6 +6,8 @@ target 'imgur Gallery' do
   use_frameworks!
 
   # Pods for imgur Gallery
+  pod 'ImageLoader'
+  pod 'SVProgressHUD'
 
   target 'imgur GalleryTests' do
     inherit! :search_paths
