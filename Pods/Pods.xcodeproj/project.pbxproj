@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24021C9F088DC860DC1282AF152DA5E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		71838BB6C1D9C15D7D38AF0AEEEEDD47 /* Pods-imgur GalleryTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B3D308B0A6D22208912341EF79DB0A /* Pods-imgur GalleryTests-dummy.m */; };
+		7E7300706DFF5DA87587407EA43DD0E5 /* Pods-imgur Gallery-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C76C25C410B80FE4BD40FF389A6E280 /* Pods-imgur Gallery-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A01E7FFEB9C0E91955C4057CE8123230 /* Pods-imgur GalleryTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E567CE8752BBC71C0D02FC237A3F2C1D /* Pods-imgur GalleryTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5E33FD3E5A31B4E728D1F1C076FC3D7 /* Pods-imgur Gallery-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86791A09940D117B06A2D11287AAA492 /* Pods-imgur Gallery-dummy.m */; };
+		C72D53043751C3CD3CE56B9B7F9217D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28CFA2DFA2C44A9A03AFD824D5FD1302 /* Pods-imgur Gallery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-imgur Gallery.release.xcconfig"; sourceTree = "<group>"; };
+		369CBBFE65826E5EE59714794D0D4E35 /* Pods-imgur Gallery-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-imgur Gallery-acknowledgements.plist"; sourceTree = "<group>"; };
+		387F855A46901972184D1663F173C6B1 /* Pods_imgur_GalleryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_imgur_GalleryTests.framework; path = "Pods-imgur GalleryTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E4C535EB570EEBE6DC1F1E53F72F240 /* Pods-imgur GalleryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-imgur GalleryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4757A9DCC9CBFF88B9ACC4971E4C8315 /* Pods-imgur GalleryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-imgur GalleryTests.release.xcconfig"; sourceTree = "<group>"; };
+		5C76C25C410B80FE4BD40FF389A6E280 /* Pods-imgur Gallery-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-imgur Gallery-umbrella.h"; sourceTree = "<group>"; };
+		5F2D3EC2EF844B02E5B5B9B9EE6D07AD /* Pods_imgur_Gallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_imgur_Gallery.framework; path = "Pods-imgur Gallery.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6BC823719BD035547B59DDCC444A6C28 /* Pods-imgur Gallery-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-imgur Gallery-frameworks.sh"; sourceTree = "<group>"; };
+		70515B5A3073630DE9F5E45750C9E528 /* Pods-imgur Gallery-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-imgur Gallery-acknowledgements.markdown"; sourceTree = "<group>"; };
+		72BE0A09EFFFD202E3B2D0BC979005C2 /* Pods-imgur Gallery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-imgur Gallery.debug.xcconfig"; sourceTree = "<group>"; };
+		81D0E5788948EBD183B01B54E71C6870 /* Pods-imgur GalleryTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-imgur GalleryTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		86791A09940D117B06A2D11287AAA492 /* Pods-imgur Gallery-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-imgur Gallery-dummy.m"; sourceTree = "<group>"; };
+		8C186DC804F4E297CA3FEFD4CB5D497D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9C62539EFC9DFDFC88972FDE7692AA48 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DECA16C006A5979237B00EB37A34880 /* Pods-imgur GalleryTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-imgur GalleryTests-frameworks.sh"; sourceTree = "<group>"; };
+		AB006B572B418538118F88B8E234AE58 /* Pods-imgur GalleryTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-imgur GalleryTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B1BFA5C753B3DF10B5BBF71157FB5279 /* Pods-imgur GalleryTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-imgur GalleryTests-resources.sh"; sourceTree = "<group>"; };
+		C0CA9AB7B10A259AE8F09A5E574E5F9A /* Pods-imgur Gallery-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-imgur Gallery-resources.sh"; sourceTree = "<group>"; };
+		CA40FC278D332CF85509BFC350D8868D /* Pods-imgur Gallery.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-imgur Gallery.modulemap"; sourceTree = "<group>"; };
+		CC07A0366A9DA66508DD23D7D0A94054 /* Pods-imgur GalleryTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-imgur GalleryTests.modulemap"; sourceTree = "<group>"; };
+		E567CE8752BBC71C0D02FC237A3F2C1D /* Pods-imgur GalleryTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-imgur GalleryTests-umbrella.h"; sourceTree = "<group>"; };
+		F9B3D308B0A6D22208912341EF79DB0A /* Pods-imgur GalleryTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-imgur GalleryTests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0755A514A7C12A4F32861059946DBF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C72D53043751C3CD3CE56B9B7F9217D1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBD317F2946784C3ED181E734B60DBF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24021C9F088DC860DC1282AF152DA5E1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0154CB42A92183471259B796219C4DDD /* Pods-imgur GalleryTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C186DC804F4E297CA3FEFD4CB5D497D /* Info.plist */,
+				CC07A0366A9DA66508DD23D7D0A94054 /* Pods-imgur GalleryTests.modulemap */,
+				AB006B572B418538118F88B8E234AE58 /* Pods-imgur GalleryTests-acknowledgements.markdown */,
+				81D0E5788948EBD183B01B54E71C6870 /* Pods-imgur GalleryTests-acknowledgements.plist */,
+				F9B3D308B0A6D22208912341EF79DB0A /* Pods-imgur GalleryTests-dummy.m */,
+				9DECA16C006A5979237B00EB37A34880 /* Pods-imgur GalleryTests-frameworks.sh */,
+				B1BFA5C753B3DF10B5BBF71157FB5279 /* Pods-imgur GalleryTests-resources.sh */,
+				E567CE8752BBC71C0D02FC237A3F2C1D /* Pods-imgur GalleryTests-umbrella.h */,
+				3E4C535EB570EEBE6DC1F1E53F72F240 /* Pods-imgur GalleryTests.debug.xcconfig */,
+				4757A9DCC9CBFF88B9ACC4971E4C8315 /* Pods-imgur GalleryTests.release.xcconfig */,
+			);
+			name = "Pods-imgur GalleryTests";
+			path = "Target Support Files/Pods-imgur GalleryTests";
+			sourceTree = "<group>";
+		};
+		42F4DE9353572F56379E255B9087D05A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F2D3EC2EF844B02E5B5B9B9EE6D07AD /* Pods_imgur_Gallery.framework */,
+				387F855A46901972184D1663F173C6B1 /* Pods_imgur_GalleryTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				42F4DE9353572F56379E255B9087D05A /* Products */,
+				DF91608B27DEF92B9153E7170CC14733 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BDAE3056457CE89DFEBFCD128AD940F8 /* Pods-imgur Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				9C62539EFC9DFDFC88972FDE7692AA48 /* Info.plist */,
+				CA40FC278D332CF85509BFC350D8868D /* Pods-imgur Gallery.modulemap */,
+				70515B5A3073630DE9F5E45750C9E528 /* Pods-imgur Gallery-acknowledgements.markdown */,
+				369CBBFE65826E5EE59714794D0D4E35 /* Pods-imgur Gallery-acknowledgements.plist */,
+				86791A09940D117B06A2D11287AAA492 /* Pods-imgur Gallery-dummy.m */,
+				6BC823719BD035547B59DDCC444A6C28 /* Pods-imgur Gallery-frameworks.sh */,
+				C0CA9AB7B10A259AE8F09A5E574E5F9A /* Pods-imgur Gallery-resources.sh */,
+				5C76C25C410B80FE4BD40FF389A6E280 /* Pods-imgur Gallery-umbrella.h */,
+				72BE0A09EFFFD202E3B2D0BC979005C2 /* Pods-imgur Gallery.debug.xcconfig */,
+				28CFA2DFA2C44A9A03AFD824D5FD1302 /* Pods-imgur Gallery.release.xcconfig */,
+			);
+			name = "Pods-imgur Gallery";
+			path = "Target Support Files/Pods-imgur Gallery";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DF91608B27DEF92B9153E7170CC14733 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDAE3056457CE89DFEBFCD128AD940F8 /* Pods-imgur Gallery */,
+				0154CB42A92183471259B796219C4DDD /* Pods-imgur GalleryTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A24BC25AF16558B394A8EBD26E44EECD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01E7FFEB9C0E91955C4057CE8123230 /* Pods-imgur GalleryTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7EECC3509C6C949CF9975CD9A201D5D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E7300706DFF5DA87587407EA43DD0E5 /* Pods-imgur Gallery-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		28A3F2037B297FFBE3B956A71806A9E0 /* Pods-imgur Gallery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1D8BE3F7F1AD76047A996298E71FE43 /* Build configuration list for PBXNativeTarget "Pods-imgur Gallery" */;
+			buildPhases = (
+				418F7AF29CB6CDB66AE9F8C8B46090A4 /* Sources */,
+				DBD317F2946784C3ED181E734B60DBF1 /* Frameworks */,
+				B7EECC3509C6C949CF9975CD9A201D5D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-imgur Gallery";
+			productName = "Pods-imgur Gallery";
+			productReference = 5F2D3EC2EF844B02E5B5B9B9EE6D07AD /* Pods_imgur_Gallery.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E90F56344AEFB3785E1BFCE1003B600F /* Pods-imgur GalleryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 685149CEB4131CA2CAFFCA8F49C2BF6E /* Build configuration list for PBXNativeTarget "Pods-imgur GalleryTests" */;
+			buildPhases = (
+				A91AAE0B13D3854546727EDAD51F5669 /* Sources */,
+				A0755A514A7C12A4F32861059946DBF6 /* Frameworks */,
+				A24BC25AF16558B394A8EBD26E44EECD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-imgur GalleryTests";
+			productName = "Pods-imgur GalleryTests";
+			productReference = 387F855A46901972184D1663F173C6B1 /* Pods_imgur_GalleryTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 42F4DE9353572F56379E255B9087D05A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28A3F2037B297FFBE3B956A71806A9E0 /* Pods-imgur Gallery */,
+				E90F56344AEFB3785E1BFCE1003B600F /* Pods-imgur GalleryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		418F7AF29CB6CDB66AE9F8C8B46090A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5E33FD3E5A31B4E728D1F1C076FC3D7 /* Pods-imgur Gallery-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91AAE0B13D3854546727EDAD51F5669 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71838BB6C1D9C15D7D38AF0AEEEEDD47 /* Pods-imgur GalleryTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0A990BF25B8A6BB5717E51345C264546 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72BE0A09EFFFD202E3B2D0BC979005C2 /* Pods-imgur Gallery.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-imgur Gallery/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-imgur Gallery/Pods-imgur Gallery.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_imgur_Gallery;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		12EBB2F911912F16D2945DBB0616E6E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E4C535EB570EEBE6DC1F1E53F72F240 /* Pods-imgur GalleryTests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-imgur GalleryTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-imgur GalleryTests/Pods-imgur GalleryTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_imgur_GalleryTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2B6FA96FAA611A62279C49F6E01C059F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3691EFF605EB29787F8A46C5B6BE1D9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A573289C3174664AB460F3B2E7CAFE8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28CFA2DFA2C44A9A03AFD824D5FD1302 /* Pods-imgur Gallery.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-imgur Gallery/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-imgur Gallery/Pods-imgur Gallery.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_imgur_Gallery;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D6DC5FE809237AA472922737B651C1B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4757A9DCC9CBFF88B9ACC4971E4C8315 /* Pods-imgur GalleryTests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-imgur GalleryTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-imgur GalleryTests/Pods-imgur GalleryTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_imgur_GalleryTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B6FA96FAA611A62279C49F6E01C059F /* Debug */,
+				3691EFF605EB29787F8A46C5B6BE1D9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		685149CEB4131CA2CAFFCA8F49C2BF6E /* Build configuration list for PBXNativeTarget "Pods-imgur GalleryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12EBB2F911912F16D2945DBB0616E6E2 /* Debug */,
+				D6DC5FE809237AA472922737B651C1B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1D8BE3F7F1AD76047A996298E71FE43 /* Build configuration list for PBXNativeTarget "Pods-imgur Gallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A990BF25B8A6BB5717E51345C264546 /* Debug */,
+				A573289C3174664AB460F3B2E7CAFE8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
