@@ -26,9 +26,11 @@ class GallerySearchAPI {
         
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             
-           var  movieData = try? String(decoding: data!, as: UTF8.self)
-            let dicty = movieData?.convertToDictionary()
-            let result = dicty!["data"]
+            
+            let response = try! JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions()) as? [String:Any]
+            let gallery = response?["data"] as? [Any]
+            let firstItem = gallery![0] as? [String:Any]
+            (((firstItem!["images"] as? [Any])![0])as? [String:Any])!["link"]!
             completion([])
         }
         task.resume()
