@@ -11,22 +11,39 @@ import UIKit
 class GallerySearchAPI {
     static let sharedInstance = GallerySearchAPI()
     
-    func searchGalleryByPage(page: Int, query: String, completion: @escaping (_ movies:Array<String>) -> Void){
-        do {
-            let requestBuilder = try RequestBuilderGET(baseUrl: BASE_URL)
-                .buildQuery(name: QUERY_TAG, value: query)
-                .buildHeader(value: CLIENT_ID, header: AUTH_TAG).buildRequest()
-            
-                completion([])
-            return
-        }catch RequestError.invalidBaseURL {
-            print("Malformed URL")
-        }catch RequestError.invalidQueryItems {
-            print("Invalid Query items")
-        }catch {
-            print("Uknown Error")
-        }
-        completion([])
-    }
+    private init(){}
     
+    func searchGalleryByPage(page: Int, query: String, completion: @escaping (_ movies:Array<String>) -> Void) {
+        
+        let requestBuilder = try? RequestBuilderGET(baseUrl: BASE_URL + "\(page)")
+            .buildQuery(name: QUERY_TAG, value: query)
+            .buildHeader(value: CLIENT_ID, header: AUTH_TAG).buildRequest()
+        
+        guard let request = requestBuilder   else{
+            completion([])
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            
+           var  movieData = try? String(decoding: data!, as: UTF8.self)
+            let dicty = movieData?.convertToDictionary()
+            let result = dicty!["data"]
+            completion([])
+        }
+        task.resume()
+    }
+}
+
+extension String {
+    func convertToDictionary() -> [String: Any]? {
+        if let data = self.data(using: .utf8) {
+            do {
+                return try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+        return nil
+    }
 }

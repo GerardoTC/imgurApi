@@ -14,9 +14,9 @@ enum RequestError: Error {
 }
 
 class RequestBuilderGET {
-    var baseUrl:String = ""
-    var queryItems:[NSURLQueryItem] = [NSURLQueryItem]()
-    var headers: [String: String] = [:]
+    private var baseUrl:String = ""
+    private var queryItems:[NSURLQueryItem] = [NSURLQueryItem]()
+    private var headers: [String: String] = [:]
     init(baseUrl:String) {
         if !baseUrl.isEmpty {
             self.baseUrl = baseUrl
@@ -29,7 +29,7 @@ class RequestBuilderGET {
     }
     
     func buildHeader(value:String, header:String) -> RequestBuilderGET {
-        self.headers[value] = header
+        self.headers[header] = value
         return self
     }
     

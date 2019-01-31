@@ -24,5 +24,17 @@ class imgur_GalleryTests: XCTestCase {
             XCTAssertTrue(false)
         }
     }
+    
+    func testAPI() {
+        let expectation = XCTestExpectation(description: "Download apple.com home page")
+        GallerySearchAPI.sharedInstance.searchGalleryByPage(page: 0, query: "gallery") { (result) in
+            expectation.fulfill()
+        }
+        
+        
+        wait(for: [expectation], timeout: 10.0)
+    }
+    
+    
 
 }

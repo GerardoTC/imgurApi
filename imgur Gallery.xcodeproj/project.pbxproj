@@ -88,6 +88,7 @@
 		9A22776522028E8E00D61D3A /* gallery_search */ = {
 			isa = PBXGroup;
 			children = (
+				9A2277752202B18F00D61D3A /* model */,
 				9A22776D220294E500D61D3A /* repository */,
 				9AB9E73522028132007156D9 /* GallerySearchViewController.swift */,
 				9A22776722028F0200D61D3A /* GallerySearchPresenter.swift */,
@@ -121,6 +122,13 @@
 				9A22777322029EC600D61D3A /* RequestBuilderGET.swift */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		9A2277752202B18F00D61D3A /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		9AB9E72722028132007156D9 = {
