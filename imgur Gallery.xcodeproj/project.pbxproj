@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3571890F22048B180064DF6C /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3571890E22048B180064DF6C /* ServerResponse.swift */; };
+		35DA28F82203614100C11DFA /* ImgurItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DA28F72203614100C11DFA /* ImgurItem.swift */; };
 		390EBD476E6DB2494C7A43AE /* Pods_imgur_Gallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 915A38B2F113586873F56D8A /* Pods_imgur_Gallery.framework */; };
 		5ADA07A3905A947D22FB93A9 /* Pods_imgur_GalleryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A784965F001903013770EA2 /* Pods_imgur_GalleryTests.framework */; };
 		9A22776822028F0200D61D3A /* GallerySearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22776722028F0200D61D3A /* GallerySearchPresenter.swift */; };
@@ -34,6 +36,8 @@
 
 /* Begin PBXFileReference section */
 		2106C94DD4DB74002C3629B6 /* Pods-imgur Gallery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imgur Gallery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imgur Gallery/Pods-imgur Gallery.debug.xcconfig"; sourceTree = "<group>"; };
+		3571890E22048B180064DF6C /* ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
+		35DA28F72203614100C11DFA /* ImgurItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurItem.swift; sourceTree = "<group>"; };
 		36C61248EF9F0761043EA0F5 /* Pods-imgur Gallery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imgur Gallery.release.xcconfig"; path = "Pods/Target Support Files/Pods-imgur Gallery/Pods-imgur Gallery.release.xcconfig"; sourceTree = "<group>"; };
 		3A784965F001903013770EA2 /* Pods_imgur_GalleryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_imgur_GalleryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54EC4D71527C6665EAB67C90 /* Pods-imgur GalleryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imgur GalleryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imgur GalleryTests/Pods-imgur GalleryTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35DA28F62203608C00C11DFA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				35DA28F72203614100C11DFA /* ImgurItem.swift */,
+				3571890E22048B180064DF6C /* ServerResponse.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		81FF888A8396D255777F4C9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,8 +101,7 @@
 		9A22776522028E8E00D61D3A /* gallery_search */ = {
 			isa = PBXGroup;
 			children = (
-				9A2277752202B18F00D61D3A /* model */,
-				9A22776D220294E500D61D3A /* repository */,
+				35DA28F62203608C00C11DFA /* model */,
 				9AB9E73522028132007156D9 /* GallerySearchViewController.swift */,
 				9A22776722028F0200D61D3A /* GallerySearchPresenter.swift */,
 				9A22776922028FF000D61D3A /* GallerySearchInteractor.swift */,
@@ -124,13 +136,6 @@
 			path = utils;
 			sourceTree = "<group>";
 		};
-		9A2277752202B18F00D61D3A /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
 		9AB9E72722028132007156D9 = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +159,7 @@
 		9AB9E73222028132007156D9 /* imgur Gallery */ = {
 			isa = PBXGroup;
 			children = (
+				9A22776D220294E500D61D3A /* repository */,
 				9A22777022029A3300D61D3A /* utils */,
 				9A22776622028EAC00D61D3A /* ui */,
 				9A22776522028E8E00D61D3A /* gallery_search */,
@@ -195,7 +201,6 @@
 				9AB9E72D22028132007156D9 /* Frameworks */,
 				9AB9E72E22028132007156D9 /* Resources */,
 				79D06583D08CD068CE3B534B /* [CP] Embed Pods Frameworks */,
-				0A9997F304E89D9FAD3A5C86 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,8 +219,6 @@
 				9AB9E74022028140007156D9 /* Sources */,
 				9AB9E74122028140007156D9 /* Frameworks */,
 				9AB9E74222028140007156D9 /* Resources */,
-				044B7863DCCC4E8CC88C0EB3 /* [CP] Embed Pods Frameworks */,
-				4CD532A08DF0F3C445515E7F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -286,51 +289,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		044B7863DCCC4E8CC88C0EB3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-imgur GalleryTests/Pods-imgur GalleryTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0A9997F304E89D9FAD3A5C86 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-imgur Gallery/Pods-imgur Gallery-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4CD532A08DF0F3C445515E7F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-imgur GalleryTests/Pods-imgur GalleryTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		79D06583D08CD068CE3B534B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -398,7 +356,9 @@
 				9AB9E73622028132007156D9 /* GallerySearchViewController.swift in Sources */,
 				9A22776A22028FF000D61D3A /* GallerySearchInteractor.swift in Sources */,
 				9A22776F2202951A00D61D3A /* GallerySearchAPI.swift in Sources */,
+				3571890F22048B180064DF6C /* ServerResponse.swift in Sources */,
 				9A22776822028F0200D61D3A /* GallerySearchPresenter.swift in Sources */,
+				35DA28F82203614100C11DFA /* ImgurItem.swift in Sources */,
 				9AB9E73422028132007156D9 /* AppDelegate.swift in Sources */,
 				9A22777222029A5000D61D3A /* Constants.swift in Sources */,
 			);
@@ -563,8 +523,8 @@
 			baseConfigurationReference = 2106C94DD4DB74002C3629B6 /* Pods-imgur Gallery.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6L78LAKEZ9;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = MBXZA6Z65J;
 				INFOPLIST_FILE = "imgur Gallery/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -572,6 +532,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gerardotc.imgur-Gallery";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = com.easysolutions.did.implementation;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -582,8 +543,8 @@
 			baseConfigurationReference = 36C61248EF9F0761043EA0F5 /* Pods-imgur Gallery.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6L78LAKEZ9;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = MBXZA6Z65J;
 				INFOPLIST_FILE = "imgur Gallery/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -591,6 +552,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gerardotc.imgur-Gallery";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = com.easysolutions.did.implementation;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -10,7 +10,16 @@ import UIKit
 protocol GallerySearchViewProtocol {
     
 }
-class GallerySearchViewController: UIViewController,GallerySearchViewProtocol {
+class GallerySearchViewController: UIViewController,GallerySearchViewProtocol, UITableViewDataSource, UITableViewDelegate {
+    @IBOutlet weak var table: UITableView!
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+    
 
     var presenter:GallerySearchPresenterProtocol!
     

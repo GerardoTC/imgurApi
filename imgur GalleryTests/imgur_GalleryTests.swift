@@ -26,12 +26,11 @@ class imgur_GalleryTests: XCTestCase {
     }
     
     func testAPI() {
-        let expectation = XCTestExpectation(description: "Download apple.com home page")
+        let expectation = XCTestExpectation(description: "Gallery service")
         GallerySearchAPI.sharedInstance.searchGalleryByPage(page: 0, query: "gallery") { (result) in
+            XCTAssertTrue(result.count > 0)
             expectation.fulfill()
         }
-        
-        
         wait(for: [expectation], timeout: 10.0)
     }
     
