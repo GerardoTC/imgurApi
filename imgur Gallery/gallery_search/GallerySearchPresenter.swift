@@ -9,12 +9,28 @@
 import Foundation
 
 protocol GallerySearchPresenterProtocol: class {
-    
+    func viewDidLoad()
 }
 
 class GallerySearchPresenter:GallerySearchPresenterProtocol {
+    var view : GallerySearchViewProtocol?
+    var interactor: GallerySearchInteractorProtocol?
+    let debouncer = Debouncer(timeInterval: 0.5)
+    let images: [ImgurItem] = []
+    
     
     init(view: GallerySearchViewProtocol, interactor: GallerySearchInteractorProtocol) {
+        self.interactor = interactor
+        self.view = view
         interactor.setPresenter(presenter: self)
+        initDebouncerClosure()
+    }
+    func initDebouncerClosure(){
+        debouncer.closure = {
+            
+        }
+    }
+    func viewDidLoad() {
+        
     }
 }

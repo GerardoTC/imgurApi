@@ -10,7 +10,9 @@ import UIKit
 protocol GallerySearchViewProtocol {
     
 }
-class GallerySearchViewController: UIViewController,GallerySearchViewProtocol, UITableViewDataSource, UITableViewDelegate {
+class GallerySearchViewController: UIViewController,GallerySearchViewProtocol, UITableViewDataSource, UITableViewDelegate, UISearchResultsUpdating {
+    
+    
     @IBOutlet weak var table: UITableView!
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0
@@ -26,6 +28,12 @@ class GallerySearchViewController: UIViewController,GallerySearchViewProtocol, U
     override func viewDidLoad() {
         super.viewDidLoad()
         initMVP(interactor: GallerySearchInteractor())
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.placeholder = "Search"
+        navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
 
     func initMVP(interactor:GallerySearchInteractorProtocol) {
@@ -34,3 +42,8 @@ class GallerySearchViewController: UIViewController,GallerySearchViewProtocol, U
 
 }
 
+extension GallerySearchViewController {
+    func updateSearchResults(for searchController: UISearchController) {
+        presenter.
+    }
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="155" id="oor-8z-EZP">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oor-8z-EZP" id="X2n-iC-DTR">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="154.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Dqs-8M-XFE">
+                        <rect key="frame" x="0.0" y="11" width="375" height="132.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QOF-Vl-qLu">
+                                <rect key="frame" x="0.0" y="0.0" width="138" height="132.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="5Tr-GB-bt3"/>
+                                    <constraint firstAttribute="height" constant="132.5" id="U0E-88-liP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label " lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cxv-Pf-qNm">
+                                <rect key="frame" x="168" y="57.5" width="207" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.97330942909999996" green="1" blue="0.96576149690000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Dqs-8M-XFE" secondAttribute="bottom" constant="11" id="9Bi-3h-me2"/>
+                    <constraint firstAttribute="trailing" secondItem="Dqs-8M-XFE" secondAttribute="trailing" id="Vu8-wX-vBC"/>
+                    <constraint firstItem="Dqs-8M-XFE" firstAttribute="leading" secondItem="X2n-iC-DTR" secondAttribute="leading" id="lBg-Fk-IDa"/>
+                    <constraint firstItem="Dqs-8M-XFE" firstAttribute="top" secondItem="X2n-iC-DTR" secondAttribute="top" constant="11" id="ovc-hf-ts0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.20392156859999999" green="0.28627450980000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <point key="canvasLocation" x="16.800000000000001" y="31.03448275862069"/>
+        </tableViewCell>
+    </objects>
+</document>
