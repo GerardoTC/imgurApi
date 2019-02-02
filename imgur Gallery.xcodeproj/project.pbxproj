@@ -15,8 +15,8 @@
 		9A22776F2202951A00D61D3A /* GallerySearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22776E2202951A00D61D3A /* GallerySearchAPI.swift */; };
 		9A22777222029A5000D61D3A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22777122029A5000D61D3A /* Constants.swift */; };
 		9A22777422029EC600D61D3A /* RequestBuilderGET.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22777322029EC600D61D3A /* RequestBuilderGET.swift */; };
-		9A2277792205129C00D61D3A /* ItemTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A2277782205129C00D61D3A /* ItemTableCell.xib */; };
 		9A22777B2205161B00D61D3A /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22777A2205161B00D61D3A /* Debouncer.swift */; };
+		9A2277802205322500D61D3A /* ItemCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22777F2205322500D61D3A /* ItemCellData.swift */; };
 		9AB9E73422028132007156D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9E73322028132007156D9 /* AppDelegate.swift */; };
 		9AB9E73622028132007156D9 /* GallerySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9E73522028132007156D9 /* GallerySearchViewController.swift */; };
 		9AB9E73922028132007156D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB9E73722028132007156D9 /* Main.storyboard */; };
@@ -48,8 +48,8 @@
 		9A22776E2202951A00D61D3A /* GallerySearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallerySearchAPI.swift; sourceTree = "<group>"; };
 		9A22777122029A5000D61D3A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9A22777322029EC600D61D3A /* RequestBuilderGET.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilderGET.swift; sourceTree = "<group>"; };
-		9A2277782205129C00D61D3A /* ItemTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableCell.xib; sourceTree = "<group>"; };
 		9A22777A2205161B00D61D3A /* Debouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
+		9A22777F2205322500D61D3A /* ItemCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellData.swift; sourceTree = "<group>"; };
 		9AB9E73022028132007156D9 /* imgur Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "imgur Gallery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB9E73322028132007156D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AB9E73522028132007156D9 /* GallerySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallerySearchViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				3571890E22048B180064DF6C /* ServerResponse.swift */,
+				9A22777F2205322500D61D3A /* ItemCellData.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -116,7 +117,6 @@
 				9AB9E73722028132007156D9 /* Main.storyboard */,
 				9AB9E73A2202813F007156D9 /* Assets.xcassets */,
 				9AB9E73C22028140007156D9 /* LaunchScreen.storyboard */,
-				9A2277782205129C00D61D3A /* ItemTableCell.xib */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -280,7 +280,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AB9E73E22028140007156D9 /* LaunchScreen.storyboard in Resources */,
-				9A2277792205129C00D61D3A /* ItemTableCell.xib in Resources */,
 				9AB9E73B22028140007156D9 /* Assets.xcassets in Resources */,
 				9AB9E73922028132007156D9 /* Main.storyboard in Resources */,
 			);
@@ -412,6 +411,7 @@
 				3571890F22048B180064DF6C /* ServerResponse.swift in Sources */,
 				9A22776822028F0200D61D3A /* GallerySearchPresenter.swift in Sources */,
 				9AB9E73422028132007156D9 /* AppDelegate.swift in Sources */,
+				9A2277802205322500D61D3A /* ItemCellData.swift in Sources */,
 				9A22777222029A5000D61D3A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

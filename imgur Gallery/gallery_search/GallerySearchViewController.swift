@@ -10,16 +10,16 @@ import UIKit
 import SVProgressHUD
 
 protocol GallerySearchViewProtocol {
-    func showItemsNotFoundAlert()
     func showLoadingView()
     func hideLoadingView()
     func reloadTable()
     func setUpNavBar()
+    func showDetail(itemSelected: DataItem)
 }
 class GallerySearchViewController: UIViewController,GallerySearchViewProtocol, UITableViewDataSource, UITableViewDelegate, UISearchResultsUpdating {
     
-    
     @IBOutlet weak var tableView: UITableView!
+    
 
     
 
@@ -55,35 +55,49 @@ class GallerySearchViewController: UIViewController,GallerySearchViewProtocol, U
         SVProgressHUD.show()
     }
     
-    func showItemsNotFoundAlert() {
-        
-    }
-    
     func reloadTable() {
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
+    }
+    
+    func showDetail(itemSelected: DataItem) {
+        
     }
 
 }
 
 extension GallerySearchViewController {
     func updateSearchResults(for searchController: UISearchController) {
-        
+        if (searchController.searchBar.text?.count ?? 0 > 0){
+            presenter.searchUpdated(value:searchController.searchBar.text ?? "")
+        }
     }
 }
 
 
 extension GallerySearchViewController {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return presenter.numberOfRowsInSection()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 160
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "itemCellImgur", for: indexPath) as? ItemCellData else {
+            fatalError("the cell does not exists")
+        }
+        return presenter.cellForRowAt(indexPath: indexPath, cell: cell)
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        presenter.didSelectRowAt(path: indexPath)
     }
 }
