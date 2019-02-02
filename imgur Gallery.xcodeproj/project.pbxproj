@@ -17,6 +17,7 @@
 		9A22777422029EC600D61D3A /* RequestBuilderGET.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22777322029EC600D61D3A /* RequestBuilderGET.swift */; };
 		9A22777B2205161B00D61D3A /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22777A2205161B00D61D3A /* Debouncer.swift */; };
 		9A2277802205322500D61D3A /* ItemCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22777F2205322500D61D3A /* ItemCellData.swift */; };
+		9A2277832205449D00D61D3A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2277822205449D00D61D3A /* DetailViewController.swift */; };
 		9AB9E73422028132007156D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9E73322028132007156D9 /* AppDelegate.swift */; };
 		9AB9E73622028132007156D9 /* GallerySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9E73522028132007156D9 /* GallerySearchViewController.swift */; };
 		9AB9E73922028132007156D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB9E73722028132007156D9 /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 		9A22777322029EC600D61D3A /* RequestBuilderGET.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilderGET.swift; sourceTree = "<group>"; };
 		9A22777A2205161B00D61D3A /* Debouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
 		9A22777F2205322500D61D3A /* ItemCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellData.swift; sourceTree = "<group>"; };
+		9A2277822205449D00D61D3A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9AB9E73022028132007156D9 /* imgur Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "imgur Gallery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB9E73322028132007156D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AB9E73522028132007156D9 /* GallerySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallerySearchViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +141,14 @@
 			path = utils;
 			sourceTree = "<group>";
 		};
+		9A2277812205448800D61D3A /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				9A2277822205449D00D61D3A /* DetailViewController.swift */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
 		9AB9E72722028132007156D9 = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +172,7 @@
 		9AB9E73222028132007156D9 /* imgur Gallery */ = {
 			isa = PBXGroup;
 			children = (
+				9A2277812205448800D61D3A /* detail */,
 				9A22776D220294E500D61D3A /* repository */,
 				9A22777022029A3300D61D3A /* utils */,
 				9A22776622028EAC00D61D3A /* ui */,
@@ -403,6 +414,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A2277832205449D00D61D3A /* DetailViewController.swift in Sources */,
 				9A22777422029EC600D61D3A /* RequestBuilderGET.swift in Sources */,
 				9AB9E73622028132007156D9 /* GallerySearchViewController.swift in Sources */,
 				9A22776A22028FF000D61D3A /* GallerySearchInteractor.swift in Sources */,

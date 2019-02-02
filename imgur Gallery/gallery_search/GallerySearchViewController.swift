@@ -39,6 +39,7 @@ class GallerySearchViewController: UIViewController,GallerySearchViewProtocol, U
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
         navigationController?.navigationBar.prefersLargeTitles = true
+        self.definesPresentationContext = true
     }
 
     func initMVP(interactor:GallerySearchInteractorProtocol) {
@@ -62,8 +63,14 @@ class GallerySearchViewController: UIViewController,GallerySearchViewProtocol, U
     }
     
     func showDetail(itemSelected: DataItem) {
-        
+        let detailViewController = self.storyboard?
+            .instantiateViewController(withIdentifier:
+                "detailView") as? DetailViewController
+        detailViewController?.itemDetail = itemSelected
+        self.navigationController?.pushViewController(detailViewController!,
+                                                      animated: true)
     }
+    
 
 }
 
