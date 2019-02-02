@@ -10,13 +10,19 @@ import Foundation
 
 protocol GallerySearchPresenterProtocol: class {
     func viewDidLoad()
+    func updateItems(items : [DataItem])
+    func itemsNotFound()
 }
 
 class GallerySearchPresenter:GallerySearchPresenterProtocol {
+    
+    
     var view : GallerySearchViewProtocol?
     var interactor: GallerySearchInteractorProtocol?
+    var page: Int = 0
     let debouncer = Debouncer(timeInterval: 0.5)
-    let images: [ImgurItem] = []
+    var images: [DataItem] = []
+    
     
     
     init(view: GallerySearchViewProtocol, interactor: GallerySearchInteractorProtocol) {
@@ -31,6 +37,17 @@ class GallerySearchPresenter:GallerySearchPresenterProtocol {
         }
     }
     func viewDidLoad() {
-        
+        view?.setUpNavBar()
+        view?.showLoadingView()
+        interactor?.getItemsByPage(page: page, query: "Cats")
+    }
+    
+    func updateItems(items: [DataItem]) {
+        view?.hideLoadingView()
+        self.images = items
+    }
+    
+    func itemsNotFound() {
+        self.view?.showItemsNotFoundAlert()
     }
 }

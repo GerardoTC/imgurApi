@@ -10,9 +10,20 @@ import UIKit
 
 protocol GallerySearchInteractorProtocol {
     func setPresenter(presenter:GallerySearchPresenterProtocol)
+    func getItemsByPage(page:Int,query:String)
 }
 
 class GallerySearchInteractor:GallerySearchInteractorProtocol {
+    func getItemsByPage(page: Int, query: String) {
+        GallerySearchAPI.sharedInstance.searchGalleryByPage(page: page, query: query) { [weak self] (itemsResult) in
+            if itemsResult.count > 0 {
+                self?.presenter.updateItems(items: itemsResult)
+            } else {
+                self?.presenter.itemsNotFound()
+            }
+        }
+    }
+    
     var presenter: GallerySearchPresenterProtocol!
     
     func setPresenter(presenter:GallerySearchPresenterProtocol) {

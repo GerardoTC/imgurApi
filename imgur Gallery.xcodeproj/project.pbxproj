@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3571890F22048B180064DF6C /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3571890E22048B180064DF6C /* ServerResponse.swift */; };
-		35DA28F82203614100C11DFA /* ImgurItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DA28F72203614100C11DFA /* ImgurItem.swift */; };
 		390EBD476E6DB2494C7A43AE /* Pods_imgur_Gallery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 915A38B2F113586873F56D8A /* Pods_imgur_Gallery.framework */; };
 		5ADA07A3905A947D22FB93A9 /* Pods_imgur_GalleryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A784965F001903013770EA2 /* Pods_imgur_GalleryTests.framework */; };
 		9A22776822028F0200D61D3A /* GallerySearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22776722028F0200D61D3A /* GallerySearchPresenter.swift */; };
@@ -39,7 +38,6 @@
 /* Begin PBXFileReference section */
 		2106C94DD4DB74002C3629B6 /* Pods-imgur Gallery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imgur Gallery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imgur Gallery/Pods-imgur Gallery.debug.xcconfig"; sourceTree = "<group>"; };
 		3571890E22048B180064DF6C /* ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
-		35DA28F72203614100C11DFA /* ImgurItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurItem.swift; sourceTree = "<group>"; };
 		36C61248EF9F0761043EA0F5 /* Pods-imgur Gallery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imgur Gallery.release.xcconfig"; path = "Pods/Target Support Files/Pods-imgur Gallery/Pods-imgur Gallery.release.xcconfig"; sourceTree = "<group>"; };
 		3A784965F001903013770EA2 /* Pods_imgur_GalleryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_imgur_GalleryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54EC4D71527C6665EAB67C90 /* Pods-imgur GalleryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imgur GalleryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imgur GalleryTests/Pods-imgur GalleryTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 		35DA28F62203608C00C11DFA /* model */ = {
 			isa = PBXGroup;
 			children = (
-				35DA28F72203614100C11DFA /* ImgurItem.swift */,
 				3571890E22048B180064DF6C /* ServerResponse.swift */,
 			);
 			path = model;
@@ -414,7 +411,6 @@
 				9A22776F2202951A00D61D3A /* GallerySearchAPI.swift in Sources */,
 				3571890F22048B180064DF6C /* ServerResponse.swift in Sources */,
 				9A22776822028F0200D61D3A /* GallerySearchPresenter.swift in Sources */,
-				35DA28F82203614100C11DFA /* ImgurItem.swift in Sources */,
 				9AB9E73422028132007156D9 /* AppDelegate.swift in Sources */,
 				9A22777222029A5000D61D3A /* Constants.swift in Sources */,
 			);
